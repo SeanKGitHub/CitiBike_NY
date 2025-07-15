@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.envrc
+
+# VSCode settings folder
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Visualisations
+visualisations/
+
+# Scrap files
+Scraps/
+
+# Data files 
+*.csv
+*.parquet
+*.feather
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# macOS files
+.DS_Store
+
+# Ignore .env files with secrets
+.env
+
+# Ignore pytest cache
+.pytest_cache/
