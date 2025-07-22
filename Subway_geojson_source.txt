@@ -1,0 +1,5 @@
+Subway geojson data sourced from yangdanny97 Github:
+
+Subway Lines: https://github.com/yangdanny97/nyc-subway-vis/blob/main/subway_lines.geojson?short_path=2bc406f 
+
+Subway Stations: https://github.com/yangdanny97/nyc-subway-vis/blob/main/subway_stations.geojson?short_path=6a2b624 
