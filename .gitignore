@@ -14,9 +14,6 @@ venv/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Visualisations
-visualisations/
-
 # Scrap files
 Scraps/
 
