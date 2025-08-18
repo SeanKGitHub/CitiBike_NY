@@ -105,7 +105,7 @@ pyproj==3.7.1
 python-dateutil==2.9.0.post0
 python-dotenv==1.1.0
 python-json-logger==3.3.0
-python_version >=3.12, <3.13
+python_version >=3.12, <3.14
 pytz==2025.2
 pywin32==310
 pywinpty==2.0.15
