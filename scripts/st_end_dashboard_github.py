@@ -83,7 +83,7 @@ if page == "Intro page":
 
     with col1:
         try:
-          bikes = Image.open("visualisations/vertical_bikes_redbrick.jpg")   # Photo by <a href="https://unsplash.com/@hanyangzhang?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Hanyang Zhang</a> on <a href="https://unsplash.com/photos/bicycles-parked-on-the-side-of-a-street-KcOoW1Tv06Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+          bikes = Image.open("visualisations/vertical_bikes_redbrick.png")   # Photo by <a href="https://unsplash.com/@hanyangzhang?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Hanyang Zhang</a> on <a href="https://unsplash.com/photos/bicycles-parked-on-the-side-of-a-street-KcOoW1Tv06Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
           st.image(bikes, use_container_width=True)
         except Exception as e:
           st.warning(f"Image could not be loaded: {e}")
