@@ -33,12 +33,14 @@ if "page_idx" not in st.session_state:
     st.session_state.page_idx = 0
 
 # Sidebar selector (keeps direct access)
-page = st.sidebar.selectbox(
+selected_page = st.sidebar.selectbox(
     'Select an aspect of the analysis',
     pages,
     index=st.session_state.page_idx
 )
-st.session_state.page_idx = pages.index(page)
+if selected_page != pages[st.session_state.page_idx]:
+    st.session_state.page_idx = pages.index(selected_page)
+page = pages[st.session_state.page_idx]
 
 # Arrow navigation buttons
 col_prev, col_next = st.columns([1, 1])
