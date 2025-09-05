@@ -108,6 +108,15 @@ elif page == "When and how are people using Citibike?":
 
   st.title("When and how are people using Citibike?")
 
+  # Line plot of daily trips annotated with seasonal averages
+
+  st.image("visualisations/season_annotated.png")
+  st.markdown(
+      "There is a clear seasonal pattern to the number of daily trips, with the summer months having over double "
+      "the average daily # of trips compared to Winter. If cost-effective, there is large scope here"
+      " to reduce capacities in the Winter months."
+  ) 
+
 #              Average trips per day of week plot 
   fig_dow = go.Figure(go.Bar(x=avg_trips['day_of_week'], y=avg_trips['trip_count']))
 # Add figure title
@@ -365,12 +374,14 @@ else:
                 margin:0; 
                 padding:12px;
             ">
-                  Fleet Allocation
+                  Seasonal Operations
             </h4>
             <div style="padding:20px;">
                 <ul style="color:#FFFFFF; margin:0;">
-        <li>Increase bike availability mid-week (especially Wednesday and Thursday) to avoid shortages.</li> 
-        <li>Shift some maintenance/repairs to low-demand days like Sunday or Monday.</li>
+        <li>If the costs involved in reducing and then replenishing fleet size are worth it, we should reduce operational capacities during the Winter months given lower demand.</li>
+        <li>Given average daily trips are 62% lower in Winter than in Summer, we can reduce fleet size by half and still have a 10% buffer</li>
+        <li>Start reduction measures in November, and then ramp back up in March.</li>
+        <li>Note: We must monitor shorter term trends, and predict year-on-year growth to account for longer term demand increase</li>
       </ul>
       </div>
       """, unsafe_allow_html=True)
@@ -403,12 +414,12 @@ else:
                 margin:0; 
                 padding:12px;
             ">
-                  Seasonal Operations
+                  Fleet Allocation
             </h4>
             <div style="padding:20px;">
                 <ul style="color:#FFFFFF; margin:0;">
-        <li>Increase operational capacities during the warmer months to handle increased demand.</li>
-        <li>Reduce rebalancing resources in colder months and during forecasted heavy rain days</li>
+        <li>Increase bike availability mid-week (especially Wednesday and Thursday) to avoid shortages.</li> 
+        <li>Shift some maintenance/repairs to low-demand days like Sunday or Monday.</li>
       </ul>
       </div>
       """, unsafe_allow_html=True)
