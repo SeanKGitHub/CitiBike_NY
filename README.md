@@ -8,23 +8,25 @@
 
 This project explores CitiBike trip data from 2022 through spatial analyses, user-type breakdowns, and interactive visualizations. It incorporates neighborhood population and socio-demographic data as well as subway infrastructure geography to better understand urban mobility dynamics.
 
+To view the analyses and recommendations in summarised format without running the files, you can simply open the [dashboard](https://citibikeny-bds8rujq4bcgrepucgv2oc.streamlit.app/)
+
 ---
 
 ## Project Structure
 
+```
 CitiBike_NY/
-├── Data/ # Processed datasets
-├── notebooks/ # Jupyter notebooks for data preparation, exploration & analyses
-├── scripts/ # Scripts used for extracting data and dashboard creation
-├── visualisations/ # Output images, plots, and maps
-├── requirements.txt # Python dependencies
-├── 2020 Neighborhood Tabulation Areas (NTAs)_20250721.geojson # Neighborhood boundaries
-├── subway_lines.geojson # Subway route geometries
-├── subway_stations.geojson # Subway station locations
-└── README.md # This documentation
+├── Data/                              # Processed datasets
+├── notebooks/                         # Jupyter notebooks for data preparation, exploration & analyses
+├── scripts/                           # Scripts used for extracting data and dashboard creation
+├── visualisations/                    # Output images, plots, and maps
+├── requirements.txt                   # Python dependencies
+├── 2020 Neighborhood Tabulation Areas (NTAs)_20250721.geojson   # Neighborhood boundaries
+├── subway_lines.geojson               # Subway route geometries
+├── subway_stations.geojson            # Subway station locations
+└── README.md                          # This documentation
+```
 
-
----
 
 ## Setup & Installation
 

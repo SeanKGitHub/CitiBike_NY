@@ -108,6 +108,15 @@ elif page == "When and how are people using Citibike?":
 
   st.title("When and how are people using Citibike?")
 
+  # Line plot of daily trips annotated with seasonal averages
+
+  st.image("visualisations/season_annotated.png")
+  st.markdown(
+      "There is a clear seasonal pattern to the number of daily trips, with the summer months having over double"
+      "the average daily # of trips compared to Winter. If cost-effective, there is large scope here"
+      " to reduce capacities in the Winter months."
+  )
+
 #              Average trips per day of week plot 
   fig_dow = go.Figure(go.Bar(x=avg_trips['day_of_week'], y=avg_trips['trip_count']))
 # Add figure title
@@ -159,8 +168,8 @@ elif page == "When and how are people using Citibike?":
   st.plotly_chart(fig_temp, use_container_width=True)
   st.markdown(
    "There is a clear link between temperature and the number of trips. The amount of "
-   "Citibike trips generally rises and drops with the average daily temperature and so there "
-   "is a strong seasonal pattern." \
+   "Citibike trips generally rises and drops with the average daily temperature, corresponding with the"
+   "above seasonal pattern." \
    "However since there are some strong dips despite higher temperature, we will look at "
    "precipiation also"
 )
